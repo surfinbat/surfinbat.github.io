@@ -1,1 +1,97 @@
+/* ===========================
+   Buttons
+=========================== */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  background-color: var(--button-bg, #0078d4);
+  color: var(--button-color, #fff);
+  transition: all 0.2s ease;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: var(--button-hover-bg, #005a9e);
+  color: var(--button-hover-color, #fff);
+}
+
+.button:disabled {
+  background-color: var(--button-disabled-bg, #ccc);
+  color: var(--button-disabled-color, #666);
+  cursor: not-allowed;
+}
+
+.button .icon {
+  display: inline-flex;
+  margin-left: 0.5em;
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+}
+
+/* ===========================
+   Text
+=========================== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #080808;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0 0 1em 1.3em;
+  padding: 0;
+}
+
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+
+/* ===========================
+   Images
+=========================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===========================
+   Transitions
+=========================== */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.slide-left {
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.slide-left.active {
+  transform: translateX(0);
+}
+
+.slide-right {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.slide-right.active {
+  transform: translateX(0);
+}
 
